@@ -189,6 +189,7 @@
 
         /* --- ХЕДЕР --- */
         header {
+            position: -webkit-sticky;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -1720,6 +1721,12 @@
             .audience-soft__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .benefits-soft__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .process-soft__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            
+            .trainers-soft__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .space-soft__grid { grid-template-columns: 1fr; }
+            .space-soft__side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+            .parents-soft__grid { grid-template-columns: 1fr; }
+            
             .prices-soft__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             
             .reviews-soft__grid { 
@@ -1752,6 +1759,15 @@
             .container { width: min(100% - 24px, 1180px); }
             .framed-block { padding: 32px 20px; border-radius: 22px; }
             .contact-soft__form-wrap { padding: 24px; }
+
+            .about-soft__principles { grid-template-columns: 1fr; }
+            .audience-soft__grid { grid-template-columns: 1fr; }
+            .benefits-soft__grid { grid-template-columns: 1fr; }
+            .process-soft__grid { grid-template-columns: 1fr; }
+            .trainers-soft__grid { grid-template-columns: 1fr; }
+            .space-soft__side { grid-template-columns: 1fr; }
+            .prices-soft__grid { grid-template-columns: 1fr; }
+            .not-here-soft__grid { grid-template-columns: 1fr; }
 
             .space-soft__photo--large { aspect-ratio: 1 / 1; }
             .space-soft__photo--small { aspect-ratio: 4 / 3; }
