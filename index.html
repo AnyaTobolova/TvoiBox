@@ -1453,6 +1453,56 @@
             z-index: 2;
         }
 
+        .contact-soft__info {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-soft__eyebrow {
+            margin: 0;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent-red);
+            font-weight: 700;
+        }
+
+        .contact-soft__lead {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .contact-soft__points {
+            display: grid;
+            gap: 14px;
+            margin: 12px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .contact-soft__points li {
+            position: relative;
+            padding-left: 22px;
+            color: var(--text-main);
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .contact-soft__points li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-red);
+        }
+
         .contact-soft__form-wrap {
             padding: 32px;
             border-radius: 28px;
@@ -1757,8 +1807,12 @@
             .hero-soft__bg-logo { width: 80vw; }
             .hero-soft__title::before { width: 30px; top: -10px; }
             .container { width: min(100% - 24px, 1180px); }
-            .framed-block { padding: 32px 20px; border-radius: 22px; }
-            .contact-soft__form-wrap { padding: 24px; }
+            .framed-block { padding: 28px 16px; border-radius: 20px; }
+            .contact-soft__form-wrap { padding: 24px 16px; }
+            
+            .form-group input,
+            .form-group select { height: 54px; font-size: 15px; }
+            .contact-soft__submit { height: 54px; }
 
             .about-soft__principles { grid-template-columns: 1fr; }
             .audience-soft__grid { grid-template-columns: 1fr; }
